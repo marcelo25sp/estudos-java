@@ -9,6 +9,7 @@ public class ClassificadorIdade {
         Scanner sc = new Scanner(System.in);
         int idade = sc.nextInt();
         
+        System.out.println("Testando comandos de git!");
         System.out.println(idade);
         
         sc.close();
