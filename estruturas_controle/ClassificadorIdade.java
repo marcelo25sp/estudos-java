@@ -11,6 +11,7 @@ public class ClassificadorIdade {
         
         System.out.println("Testando comandos de git!");
         System.out.println("Hello World! Testando novos comandos de git! ");
+        System.out.println("Fazendo 3 commits e fazendo um git push no fim (testando comandos)");
         
         
         sc.close();
