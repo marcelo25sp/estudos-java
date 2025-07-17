@@ -10,6 +10,7 @@ public class ClassificadorIdade {
         int idade = sc.nextInt();
         
         System.out.println("Testando comandos de git!");
+        System.out.println("Hello World! Testando novos comandos de git! ");
         System.out.println(idade);
         
         sc.close();
