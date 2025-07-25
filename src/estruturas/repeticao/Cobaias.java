@@ -21,6 +21,13 @@ public class Cobaias {
 		int coelhos = 0;
 		int ratos = 0;
 		int sapos = 0;
+		
+		for(int i=0;i<n;i++) {
+			System.out.print("Quantidade de cobaias: ");
+			cobaias = sc.nextInt();
+			System.out.print("Tipo de cobaias: ");
+			tipoCobaias = sc.next().charAt(0);
+		}
 
 		sc.close();
 
