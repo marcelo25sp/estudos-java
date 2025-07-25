@@ -17,14 +17,17 @@ public class Media_Idades {
 		double idade = sc.nextDouble();
 		int contador = 0;
 		double soma = 0;
-		while (idade >= 0) {
-			soma += idade;
-			contador++;
-			idade = sc.nextDouble();
+		if (idade < 0) {
+			System.out.println("Impossível calcular!");
+		} else {
+			while (idade >= 0) {
+				soma += idade;
+				contador++;
+				idade = sc.nextDouble();
+			}
+			double media = (double) soma / contador;
+			System.out.printf("Média das idades = %.2f%n", media);
 		}
-		
-		double media = (double) soma/contador;
-		System.out.printf("Média das idades = %.2f%n", media);
 
 		sc.close();
 
