@@ -21,6 +21,18 @@ public class Imc {
 		double imc = peso / (altura * altura);
 		System.out.printf("IMC = %.2f%n", imc);
 
+		if (imc < 18.5) {
+			System.out.println("Abaixo do peso ideai");
+		} else if (imc < 25.0) {
+			System.out.println("Peso ideal");
+		} else if (imc < 30.0) {
+			System.out.println("Sobrepeso");
+		} else if (imc < 40.0) {
+			System.out.println("Obesidade");
+		} else {
+			System.out.println("Obesidade grave");
+		}
+
 		sc.close();
 
 	}
