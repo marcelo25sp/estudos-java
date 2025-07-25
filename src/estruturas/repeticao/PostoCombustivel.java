@@ -13,14 +13,17 @@ public class PostoCombustivel {
 		System.out.println("Programa Posto de Combustível...");
 		System.out.println("--------------------------------");
 
+		// variáveis que serão utilizadas na contagem de cada combustível
 		int alcool = 0;
 		int gasolina = 0;
 		int diesel = 0;
 		int codigo = 0;
 
-		while (codigo != 4) {
+		while (codigo != 4) { // estrutura para parar o programa quando o usuário digitar (4) conforme o
+								// enunciado
 			System.out.print("Informe um código(1, 2, 3) ou 4 para parar: ");
 			codigo = sc.nextInt();
+			// estrutura que faz a contagem de cada combustível
 			if (codigo == 1) {
 				alcool++;
 			} else if (codigo == 2) {
