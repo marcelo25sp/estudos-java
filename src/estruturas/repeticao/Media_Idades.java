@@ -12,6 +12,12 @@ public class Media_Idades {
 
 		System.out.println("Cálculo da média das idades");
 		System.out.println("---------------------------");
+		
+		System.out.println("Digite as idades:");
+		double idade = sc.nextDouble();
+		while(idade >= 0) {
+			idade = sc.nextDouble();
+		}
 
 		sc.close();
 
