@@ -28,9 +28,16 @@ public class TrocoVerificado {
 		int quantidade = sc.nextInt();
 		System.out.print("Dinheiro recebido: ");
 		double valorRecebido = sc.nextDouble();
-		
-		double valorTotal = preco*quantidade;
+
+		double valorTotal = preco * quantidade;
 		double troco = valorRecebido - valorTotal;
+
+		if (valorRecebido >= valorTotal) {
+			System.out.printf("Troco = R$ %.2f%n", troco);
+		} else {
+			double falta = valorTotal - valorRecebido;
+			System.out.printf("Dinheiro insuficiente! Faltam R$ %.2f%n", falta);
+		}
 
 		sc.close();
 
