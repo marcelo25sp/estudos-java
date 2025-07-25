@@ -28,6 +28,9 @@ public class TrocoVerificado {
 		int quantidade = sc.nextInt();
 		System.out.print("Dinheiro recebido: ");
 		double valorRecebido = sc.nextDouble();
+		
+		double valorTotal = preco*quantidade;
+		double troco = valorRecebido - valorTotal;
 
 		sc.close();
 
