@@ -44,7 +44,7 @@ public class Media_Idades {
 			}
 			double media = (double) soma / contador;
 			System.out.printf("Média das idades = %.2f%n", media);
-		}
+		} 
 
 		sc.close();
 
