@@ -12,7 +12,7 @@ public class Imc {
 
 	public static void main(String[] args) {
 
-		Locale.setDefault(Locale.US); 
+		Locale.setDefault(Locale.US); // o método Locale sendo usado para garantir o ponto como separador decimal
 		Scanner sc = new Scanner(System.in); 
 
 		System.out.println("Cálculadora de IMC");
