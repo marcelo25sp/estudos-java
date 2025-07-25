@@ -12,12 +12,13 @@ public class Imc {
 
 	public static void main(String[] args) {
 
-		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US); 
+		Scanner sc = new Scanner(System.in); 
 
 		System.out.println("Cálculadora de IMC");
 		System.out.println("-------------------");
 
+		// entrada de dados
 		System.out.print("Entre com o peso(Kg) do usuário: ");
 		double peso = sc.nextDouble();
 		System.out.print("Entre com a altura (em metros) do usuário: ");
@@ -26,6 +27,7 @@ public class Imc {
 		double imc = peso / (altura * altura);
 		System.out.printf("IMC = %.2f%n", imc);
 
+		// implementando a estrutura condicional e exibindo a mensagem ao usuário
 		if (imc < 18.5) {
 			System.out.println("Abaixo do peso ideai");
 		} else if (imc < 25.0) {
