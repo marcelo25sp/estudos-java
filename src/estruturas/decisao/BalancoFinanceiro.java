@@ -5,6 +5,18 @@ import java.util.Scanner;
 
 public class BalancoFinanceiro {
 
+	/*
+	 * Crie um programa que simule um balanço financeiro simples.
+	 * 
+	 * O usuário deve digitar dois valores:
+	 * 
+	 * Total de receitas no mês;
+	 * 
+	 * Total de despesas no mês;
+	 * 
+	 * Imprimir o saldo final do usuario e uma mensagem explicativa
+	 */
+
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
