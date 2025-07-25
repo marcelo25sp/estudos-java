@@ -5,6 +5,11 @@ import java.util.Scanner;
 
 public class Imc {
 
+	/*
+	 * Desafio IMC (Índice de Massa Corporal) Faça um programa que leia o peso (em
+	 * kg) e a altura (em metros) de uma pessoa, calcule o IMC e mostre uma mensagem
+	 */
+
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
@@ -15,7 +20,7 @@ public class Imc {
 
 		System.out.print("Entre com o peso(Kg) do usuário: ");
 		double peso = sc.nextDouble();
-		System.out.print("Entre com a altura do usuário: ");
+		System.out.print("Entre com a altura (em metros) do usuário: ");
 		double altura = sc.nextDouble();
 
 		double imc = peso / (altura * altura);
