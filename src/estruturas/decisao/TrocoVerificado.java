@@ -21,6 +21,7 @@ public class TrocoVerificado {
 
 		System.out.println("Iniciando o programa Troco Verificado...");
 
+		// entrada de dados
 		System.out.println();
 		System.out.print("Preço unitário do produto: ");
 		double preco = sc.nextDouble();
@@ -32,8 +33,10 @@ public class TrocoVerificado {
 		double valorTotal = preco * quantidade;
 		double troco = valorRecebido - valorTotal;
 
+		
+		// estrutura para o cálculo das situações de troco ou do valor pago insuficiente
 		if (valorRecebido >= valorTotal) {
-			System.out.printf("Troco = R$ %.2f%n", troco);
+			System.out.printf("Troco = R$ %.2f%n", troco); 
 		} else {
 			double falta = valorTotal - valorRecebido;
 			System.out.printf("Dinheiro insuficiente! Faltam R$ %.2f%n", falta);
