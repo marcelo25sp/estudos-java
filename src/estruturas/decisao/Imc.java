@@ -18,6 +18,9 @@ public class Imc {
 		System.out.print("Entre com a altura do usuário: ");
 		double altura = sc.nextDouble();
 
+		double imc = peso / (altura * altura);
+		System.out.printf("IMC = %.2f%n", imc);
+
 		sc.close();
 
 	}
