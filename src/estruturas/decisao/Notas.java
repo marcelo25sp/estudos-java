@@ -12,12 +12,15 @@ public class Notas {
 
 		System.out.print("Digite a primeira nota do usuário: ");
 		double nota1 = sc.nextDouble();
-
 		System.out.print("Digite a segunda nota do usuário: ");
 		double nota2 = sc.nextDouble();
-		
+
 		double notaFinal = nota1 + nota2;
 		System.out.printf("Nota Final = %.1f%n", notaFinal);
+
+		if (notaFinal < 60.0) {
+			System.out.println("Reprovado!");
+		}
 
 		sc.close();
 
