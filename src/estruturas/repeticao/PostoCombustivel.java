@@ -51,7 +51,7 @@ public class PostoCombustivel {
 		System.out.println("Gasolina: " + gasolina);
 		System.out.println("Diesel: " + diesel);
 
-		sc.close();
+		sc.close();   
 
 	}
 
