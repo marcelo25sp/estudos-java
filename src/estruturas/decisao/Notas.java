@@ -17,6 +17,7 @@ public class Notas {
 		double nota2 = sc.nextDouble();
 		
 		double notaFinal = nota1 + nota2;
+		System.out.printf("Nota Final = %.1f%n", notaFinal);
 
 		sc.close();
 
