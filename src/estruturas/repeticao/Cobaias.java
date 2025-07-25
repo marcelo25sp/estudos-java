@@ -27,6 +27,13 @@ public class Cobaias {
 			cobaias = sc.nextInt();
 			System.out.print("Tipo de cobaias: ");
 			tipoCobaias = sc.next().charAt(0);
+			if(tipoCobaias == 'C') {
+				coelhos += cobaias;
+			}else if(tipoCobaias == 'R') {
+				ratos += cobaias;
+			}else if(sapos == 'S') {
+				sapos += cobaias;
+			}
 		}
 
 		sc.close();
