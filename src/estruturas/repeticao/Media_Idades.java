@@ -21,10 +21,19 @@ public class Media_Idades {
 		System.out.println("Cálculo da média das idades");
 		System.out.println("---------------------------");
 
+		// entrada de dados
 		System.out.println("Digite as idades:");
 		double idade = sc.nextDouble();
+
+		// as variaveis contador e soma serão utilizadas para o cálculo da média
 		int contador = 0;
 		double soma = 0;
+
+		/*
+		 * Esse bloco abaixo garante a mensagem de erro que caso o usuário digite um
+		 * número negativo na primeira vez. As variáveis soma e contador serão
+		 * utilizadas para o cálculo posterior da média das idades.
+		 */
 		if (idade < 0) {
 			System.out.println("Impossível calcular!");
 		} else {
