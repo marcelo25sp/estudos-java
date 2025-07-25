@@ -18,6 +18,9 @@ public class BalancoFinanceiro {
 		System.out.print("Entre com o valor total de despesas no mês(em R$): ");
 		double despesas = sc.nextDouble();
 		
+		double saldo = receita - despesas;
+		System.out.printf("Saldo final: R$ %.2f%n", saldo);
+		
 		sc.close();
 
 	}
