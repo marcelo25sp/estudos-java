@@ -15,6 +15,8 @@ public class Notas {
 
 		System.out.print("Digite a segunda nota do usuário: ");
 		double nota2 = sc.nextDouble();
+		
+		double notaFinal = nota1 + nota2;
 
 		sc.close();
 
