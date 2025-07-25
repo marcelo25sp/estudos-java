@@ -13,6 +13,11 @@ public class Imc {
 		System.out.println("Cálculadora de IMC");
 		System.out.println("-------------------");
 
+		System.out.print("Entre com o peso(Kg) do usuário: ");
+		double peso = sc.nextDouble();
+		System.out.print("Entre com a altura do usuário: ");
+		double altura = sc.nextDouble();
+
 		sc.close();
 
 	}
