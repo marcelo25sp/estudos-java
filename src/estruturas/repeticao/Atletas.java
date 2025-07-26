@@ -17,6 +17,9 @@ public class Atletas {
 		int n = sc.nextInt();
 		
 		double somaPeso = 0;
+		double maiorAltura = 0.0;
+		String maiorAtleta = null;
+		
 		for (int i = 0; i < n; i++) {
 			sc.nextLine(); //limpando o buffer
 			System.out.println("Digite os dados do atleta número " + (i + 1) + ":");
@@ -26,6 +29,10 @@ public class Atletas {
 			char genero = sc.next().charAt(0);
 			System.out.print("Altura: ");
 			double altura = sc.nextDouble();
+			if(altura > maiorAltura) {
+				maiorAltura = altura;
+				maiorAtleta = nome;
+			}
 			System.out.print("Peso: ");
 			double peso = sc.nextDouble();
 			somaPeso += peso;			
@@ -33,6 +40,8 @@ public class Atletas {
 		
 		double mediaPeso = somaPeso/n;
 		System.out.printf("Peso médio dos atletas = %.2f kg%n", mediaPeso);
+		
+		System.out.println("Maior atleta: " + maiorAtleta);
 
 		sc.close();
 
