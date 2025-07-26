@@ -17,24 +17,34 @@ public class Cobaias {
 		int n = sc.nextInt();
 
 		int cobaias = 0;
+		int somaCobaias = 0;
 		char tipoCobaias;
 		int coelhos = 0;
 		int ratos = 0;
 		int sapos = 0;
-		
-		for(int i=0;i<n;i++) {
+
+		for (int i = 0; i < n; i++) {
 			System.out.print("Quantidade de cobaias: ");
 			cobaias = sc.nextInt();
+			somaCobaias += cobaias;
 			System.out.print("Tipo de cobaias: ");
 			tipoCobaias = sc.next().charAt(0);
-			if(tipoCobaias == 'C') {
+			if (tipoCobaias == 'C') {
 				coelhos += cobaias;
-			}else if(tipoCobaias == 'R') {
+			} else if (tipoCobaias == 'R') {
 				ratos += cobaias;
-			}else if(sapos == 'S') {
+			} else if (tipoCobaias == 'S') {
 				sapos += cobaias;
 			}
 		}
+
+		System.out.println();
+		System.out.println("RELATÓRIO FINAL");
+		System.out.println("---------------");
+		System.out.println("Total de cobaias = " + somaCobaias);
+		System.out.println("Total de coelhos = " + coelhos);
+		System.out.println("Total de ratos = " + ratos);
+		System.out.println("Total de sapos = " + sapos);
 
 		sc.close();
 
