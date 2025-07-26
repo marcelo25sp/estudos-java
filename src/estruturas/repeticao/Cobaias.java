@@ -25,7 +25,7 @@ public class Cobaias {
 
 	public static void main(String[] args) {
 
-		Locale.setDefault(Locale.US);
+		Locale.setDefault(Locale.US); // Define o padrão de ponto flutuante como US (para usar '.' ao invés de ',')
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Iniciando programa Cobaias...");
@@ -34,6 +34,7 @@ public class Cobaias {
 		System.out.print("Quantos casos de testes serão digitados? ");
 		int n = sc.nextInt();
 
+		// Inicialização de variáveis para contagem total
 		int cobaias = 0;
 		int somaCobaias = 0;
 		char tipoCobaias;
@@ -41,6 +42,10 @@ public class Cobaias {
 		int ratos = 0;
 		int sapos = 0;
 
+		/*
+		 * O bloco de código abaixo calcula a soma das cobaias e já guarda em suas
+		 * respectivas variáveis através da estrutura de decisão if-else
+		 */
 		for (int i = 0; i < n; i++) {
 			System.out.print("Quantidade de cobaias: ");
 			cobaias = sc.nextInt();
@@ -64,9 +69,10 @@ public class Cobaias {
 		System.out.println("Total de ratos = " + ratos);
 		System.out.println("Total de sapos = " + sapos);
 
-		double percentualCoelhos = coelhos * 100 / somaCobaias;
-		double percentualRatos = ratos * 100 / somaCobaias;
-		double percentualSapos = sapos * 100 / somaCobaias;
+		// Cálculo de percentuais com casting para evitar divisão inteira
+		double percentualCoelhos = (double) coelhos * 100 / somaCobaias;
+		double percentualRatos = (double) ratos * 100 / somaCobaias;
+		double percentualSapos = (double) sapos * 100 / somaCobaias;
 
 		System.out.printf("Percentual de coelhos = %.2f%%%n", percentualCoelhos);
 		System.out.printf("Percentual de ratos = %.2f%%%n", percentualRatos);
