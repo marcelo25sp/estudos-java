@@ -5,6 +5,11 @@ import java.util.Scanner;
 
 public class Tabuada {
 
+	/*
+	 * Programa "tabuada"...
+	 * Ler um número inteiro N, daí mostrar na tela a tabuada de N para 0 a 10.
+	 */
+
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
