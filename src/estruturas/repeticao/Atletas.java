@@ -57,7 +57,11 @@ public class Atletas {
 		System.out.printf("Percentual de homens: %.2f%%%n", percentualHomens);
 
 		double alturaMediaMulheres = (double) somaAltura / contadorMulheres;
-		System.out.printf("Altura média das mulheres: %.2f%n", alturaMediaMulheres);
+		if (contadorMulheres > 0) {
+			System.out.printf("Altura média das mulheres: %.2f%n", alturaMediaMulheres);
+		}else {
+			System.out.println("Não há mulheres cadastradas!");
+		}
 
 		sc.close();
 
