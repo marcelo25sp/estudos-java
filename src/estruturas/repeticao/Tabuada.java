@@ -26,7 +26,7 @@ public class Tabuada {
 			System.out.println(n + " x " + i + " = " + (i * n));
 		}
 
-		sc.close();
+		sc.close();  
 
 	}
 
