@@ -15,7 +15,8 @@ public class Atletas {
 
 		System.out.print("Qual a quantidade de atletas? ");
 		int n = sc.nextInt();
-
+		
+		double somaPeso = 0;
 		for (int i = 0; i < n; i++) {
 			sc.nextLine(); //limpando o buffer
 			System.out.println("Digite os dados do atleta número " + (i + 1) + ":");
@@ -25,7 +26,13 @@ public class Atletas {
 			char genero = sc.next().charAt(0);
 			System.out.print("Altura: ");
 			double altura = sc.nextDouble();
+			System.out.print("Peso: ");
+			double peso = sc.nextDouble();
+			somaPeso += peso;			
 		}
+		
+		double mediaPeso = somaPeso/n;
+		System.out.printf("Peso médio dos atletas = %.2f kg%n", mediaPeso);
 
 		sc.close();
 
