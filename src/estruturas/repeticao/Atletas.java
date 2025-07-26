@@ -30,6 +30,10 @@ public class Atletas {
 			String nome = sc.nextLine();
 			System.out.print("Sexo: ");
 			char genero = sc.next().charAt(0);
+			while(genero != 'M' && genero != 'F') {
+				System.out.print("Valor invalido! Favor digitar F ou M: ");
+				genero = sc.next().charAt(0);
+			}
 			if (genero == 'M') {
 				contadorHomens++;
 			}
@@ -56,6 +60,10 @@ public class Atletas {
 			somaPeso += peso;
 		}
 
+		System.out.println();
+		System.out.println("RELATÓRIO:");
+		System.out.println("----------");
+		
 		double mediaPeso = somaPeso / n;
 		System.out.printf("Peso médio dos atletas = %.2f kg%n", mediaPeso);
 
