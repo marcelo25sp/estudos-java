@@ -108,7 +108,7 @@ public class Atletas {
 			System.out.println("Não há mulheres cadastradas!");
 		}
 
-		sc.close();
+		sc.close();  
 
 	}
 
