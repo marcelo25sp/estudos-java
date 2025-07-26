@@ -35,6 +35,10 @@ public class Atletas {
 			}
 			System.out.print("Altura: ");
 			double altura = sc.nextDouble();
+			while(altura <= 0.0) {
+				System.out.print("Valor inválido! Digite um número positivo: ");
+				altura = sc.nextDouble();
+			}
 			if (altura > maiorAltura) {
 				maiorAltura = altura;
 				maiorAtleta = nome;
