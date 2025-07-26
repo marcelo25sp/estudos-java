@@ -78,7 +78,7 @@ public class Cobaias {
 		System.out.printf("Percentual de ratos = %.2f%%%n", percentualRatos);
 		System.out.printf("Percentual de sapos = %.2f%%%n", percentualSapos);
 
-		sc.close();
+		sc.close();  
 
 	}
 
