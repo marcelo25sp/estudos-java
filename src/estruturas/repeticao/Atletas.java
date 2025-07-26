@@ -36,7 +36,7 @@ public class Atletas {
 			System.out.print("Altura: ");
 			double altura = sc.nextDouble();
 			while(altura <= 0.0) {
-				System.out.print("Valor inválido! Digite um número positivo: ");
+				System.out.print("Valor inválido! Digite um valor positivo: ");
 				altura = sc.nextDouble();
 			}
 			if (altura > maiorAltura) {
@@ -49,6 +49,10 @@ public class Atletas {
 			}
 			System.out.print("Peso: ");
 			double peso = sc.nextDouble();
+			while(peso <= 0.0) {
+				System.out.print("Valor inválido! Digite um valor positivo: ");
+				peso = sc.nextDouble();
+			}
 			somaPeso += peso;
 		}
 
