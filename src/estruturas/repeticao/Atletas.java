@@ -20,6 +20,8 @@ public class Atletas {
 		double maiorAltura = 0.0;
 		String maiorAtleta = null;
 		int contadorHomens = 0;
+		int contadorMulheres = 0;
+		double somaAltura = 0.0;
 
 		for (int i = 0; i < n; i++) {
 			sc.nextLine(); // limpando o buffer
@@ -37,6 +39,10 @@ public class Atletas {
 				maiorAltura = altura;
 				maiorAtleta = nome;
 			}
+			if (genero == 'F') {
+				contadorMulheres++;
+				somaAltura += altura;
+			}
 			System.out.print("Peso: ");
 			double peso = sc.nextDouble();
 			somaPeso += peso;
@@ -49,6 +55,9 @@ public class Atletas {
 
 		double percentualHomens = (double) contadorHomens * 100 / n;
 		System.out.printf("Percentual de homens: %.2f%%%n", percentualHomens);
+
+		double alturaMediaMulheres = (double) somaAltura / contadorMulheres;
+		System.out.printf("Altura média das mulheres: %.2f%n", alturaMediaMulheres);
 
 		sc.close();
 
