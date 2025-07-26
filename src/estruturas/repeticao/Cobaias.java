@@ -46,6 +46,14 @@ public class Cobaias {
 		System.out.println("Total de ratos = " + ratos);
 		System.out.println("Total de sapos = " + sapos);
 
+		double percentualCoelhos = coelhos * 100 / somaCobaias;
+		double percentualRatos = ratos * 100 / somaCobaias;
+		double percentualSapos = sapos * 100 / somaCobaias;
+
+		System.out.printf("Percentual de coelhos = %.2f%%%n", percentualCoelhos);
+		System.out.printf("Percentual de ratos = %.2f%%%n", percentualRatos);
+		System.out.printf("Percentual de sapos = %.2f%%%n", percentualSapos);
+
 		sc.close();
 
 	}
